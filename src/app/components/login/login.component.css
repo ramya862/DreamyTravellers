@@ -1,0 +1,41 @@
+.container vh-100
+{
+    margin-top:100px;
+    margin-left:800px;
+    margin-right:600px;
+    margin-bottom: 50px;
+    padding:50px;
+    align-items: center;
+    display: flex;
+
+}
+input.ng-invalid.ng-touched
+  {
+    border:red 1px solid;
+  }
+.loginb
+{
+    background-color: rgb(33, 36, 232);
+    width:80px;
+    border-radius: 12px;
+
+
+}
+.login
+{
+background-color: rgb(211, 216, 216);
+text-align:center;
+padding-left: 50px;
+margin-top:100px;
+margin-left:600px;
+margin-right:600px;
+margin-bottom: 50px;
+padding:50px;
+align-items: center;
+display: flex;
+
+}
+img{
+    height:90px;
+    width:90px;
+}

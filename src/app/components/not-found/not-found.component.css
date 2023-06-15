@@ -1,0 +1,27 @@
+.log
+{
+    background-color: blue;
+    border-radius: 12px;
+}
+
+.con
+{
+    background-color: grey;
+    border-radius: 12px;
+
+}
+.main
+{
+background-color: rgb(211, 216, 216);
+text-align:center;
+padding-left: 50px;
+margin-left:300px;
+margin-right:300px;
+padding:50px;
+align-items: center;
+
+}
+img{
+    height:90px;
+    width:90px;
+}

@@ -1,0 +1,21 @@
+<!---h1 style="color:blue"><b>Your Cart</b></h1>
+<div *ngIf="getcart().length > 0">
+    <div *ngFor="let placechoice of getcart(); let i=index;">
+        <p class="my-4 text-2xl">{{i+1}}. {{ placechoice.pname }}</p>
+    </div>
+</div>
+<div *ngIf="getcart().length == 0"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmWOwbHYxXP4ml-WiRYWyRPNTK7NELIkyVBLIXKugfg&s"></div--->
+  <div class="cart">
+  <h3 style="color: rgb(11, 11, 11)"><b>Your Bucket List</b></h3>
+<div *ngIf="cartItems.length > 0">
+  <h3 style="color:blue"><marquee><b>Plan soon to visit!!!!</b></marquee></h3>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYEwF_nOeWz-zAoEEu7XGfpVifbCKAm8tEfm_AKDMdOw&usqp=CAU&ec=48665701">
+  <div *ngFor="let placechoice of cartItems; let i=index;">
+    <p class="my-4 text-2xl">{{ i + 1 }}. {{ placechoice.pname }}</p>
+  </div>
+</div>
+<div *ngIf="cartItems.length == 0">
+<h3><b>Empty !!!!</b></h3>
+<h4><b><marquee>Fill the bucket with your favourite places now :)</marquee></b></h4>
+</div>
+  </div>

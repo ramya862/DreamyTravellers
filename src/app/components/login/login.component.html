@@ -1,0 +1,15 @@
+<div class="login">
+
+    <form [formGroup]="loginForm"  (ngSubmit)="onSubmit()">
+        <h1><b>Dreamy Travellers welcomes you</b></h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOWwjcAAiVMYdLkx6oQXPE0COg6NRPV3_cmxruBoa_Cw&usqp=CAU&ec=48665701">
+        <p>Please fill the details to login and stay connected</p>
+        <input type="text" placeholder="Email" name="email" formControlName="email"><br><br>
+        <input type="text" placeholder="password" name="password" formControlName="password"><br><br>
+        <button class="loginb">Login</button>
+        <div class="card-footer text-right">
+            <small><a routerLink="../forgot-password">Forgot Password</a></small>
+        </div>
+    </form>
+
+</div>

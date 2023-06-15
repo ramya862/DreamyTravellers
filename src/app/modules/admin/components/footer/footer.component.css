@@ -1,0 +1,17 @@
+.footer
+{
+    margin-top: 600px;
+    padding: 45px 30px;
+    background-color: rgb(221, 215, 215);
+}
+.footer a {
+    float: left;
+    color: #130101;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .footer a.active {
+    color: rgb(233, 233, 240);
+  }

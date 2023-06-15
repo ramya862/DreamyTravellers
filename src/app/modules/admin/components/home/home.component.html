@@ -1,0 +1,11 @@
+ <h1 style="text-align: center;"><b>Welcome to Dreamy Travellers</b></h1>
+                  <h4 style="color:blue; text-align:center"><b>We help you in finding the best place to travel for the weekend!!</b></h4>
+<img class="center" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQaXclhNX-baFwFdKNZKJR5zd1TIcbIZsjpaYR6JBBhQ&usqp=CAU&ec=48665701">
+<h4><b><marquee style="color:rgb(233, 40, 181)">Life is a wonderful gift. It really is, and as we travel and experience more of the world</marquee></b></h4>
+
+<ul *ngIf="isShowing" class="flex flex-wrap justify-center">
+    <ng-container *ngFor="let singleBook of books; let i=index">
+        <app-placesdetails [places]="singleBook" class="w-1/2 p-5 text-center">
+        </app-placesdetails>
+    </ng-container>
+</ul>

@@ -1,0 +1,12 @@
+<li class="flex border rounded-xl h-60">
+    <img [src]="places.src" [alt]="places.pname" width="200"
+        class="m-auto rounded-sm" />
+    <div class="m-auto">
+        <p class="text-lg"><b>{{ places.pname | titlecase }} at {{ places.location |
+            titlecase}}</b></p>
+        <button class="bg-yellow-400 rounded p-3" style="background-color: Yellow;" *ngIf="!isIncart"
+            (click)="addToCart($event)">Add to Bucket List</button>
+        <button class="bg-red-400 rounded p-3" *ngIf="isIncart" style="background-color: rgb(241, 96, 96);"
+            (click)="removeFromCart()">Remove from Bucket </button>
+    </div>
+  </li>
